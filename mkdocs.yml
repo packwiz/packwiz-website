@@ -1,0 +1,63 @@
+site_name: packwiz
+theme:
+  name: material
+  palette:
+    - media: '(prefers-color-scheme: light)'
+      scheme: default
+      primary: purple
+      accent: deep orange
+      toggle:
+        icon: material/lightbulb
+        name: Switch to dark mode
+    - media: '(prefers-color-scheme: dark)'
+      scheme: slate
+      primary: purple
+      accent: deep orange
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - toc.integrate
+markdown_extensions:
+  - pymdownx.magiclink
+nav:
+  - Installation: installation.md
+  - Tutorials:
+      - Getting started: tutorials/getting-started.md
+      # TODO: Documentation on how to test (packwiz serve) packwiz packs - might link to the below pages for info about installing
+      # - Testing your modpack: []
+      # TODO: See below; documentation on how to distribute packwiz packs on several platforms
+      # - Distributing your modpack:
+      #     - Publishing to CurseForge: tutorials/hosting/curseforge.md
+      #     - Hosting with HTTP:
+      #         - Your own HTTP server: []
+      #         - Github Pages: []
+      #         - Netlify: []
+      #     - Installing with packwiz-installer: []
+      - Usage with Git: tutorials/git.md
+  - Reference:
+      - Commands:
+          - Overview: reference/commands/overview.md
+          - packwiz: reference/commands/packwiz.md
+          - packwiz curseforge: reference/commands/packwiz_curseforge.md
+          - packwiz curseforge detect: reference/commands/packwiz_curseforge_detect.md
+          - packwiz curseforge export: reference/commands/packwiz_curseforge_export.md
+          - packwiz curseforge import: reference/commands/packwiz_curseforge_import.md
+          - packwiz curseforge install: reference/commands/packwiz_curseforge_install.md
+          - packwiz curseforge open: reference/commands/packwiz_curseforge_open.md
+          - packwiz init: reference/commands/packwiz_init.md
+          - packwiz modrinth: reference/commands/packwiz_modrinth.md
+          - packwiz modrinth install: reference/commands/packwiz_modrinth_install.md
+          - packwiz refresh: reference/commands/packwiz_refresh.md
+          - packwiz remove: reference/commands/packwiz_remove.md
+          - packwiz serve: reference/commands/packwiz_serve.md
+          - packwiz update: reference/commands/packwiz_update.md
+          - packwiz utils: reference/commands/packwiz_utils.md
+          - packwiz utils completion: reference/commands/packwiz_utils_completion.md
+          - packwiz utils markdown: reference/commands/packwiz_utils_markdown.md
+      # TODO: Documentation of the full packwiz v1 format
+      # - Pack format:
+      #     - pack.toml: reference/pack-format/pack-toml.md
+      #     - index.toml: []
+      #     - .packwizignore: []

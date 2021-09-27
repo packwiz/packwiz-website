@@ -1,0 +1,17 @@
+{
+  "name": "packwiz-website",
+  "version": "1.0.0",
+  "description": "Website for packwiz",
+  "main": "main.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "comp500",
+  "license": "ISC",
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  }
+}

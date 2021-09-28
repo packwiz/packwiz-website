@@ -129,3 +129,5 @@ dist
 # End of https://www.toptal.com/developers/gitignore/api/node
 
 mkdocs.yml
+docs/reference/commands/*
+!docs/reference/commands/overview.md

@@ -131,3 +131,4 @@ dist
 mkdocs.yml
 docs/reference/commands/*
 !docs/reference/commands/overview.md
+site/

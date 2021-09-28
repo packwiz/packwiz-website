@@ -30,3 +30,5 @@ Promise.all(mkdocsConfig.nav.map(async el => {
 	mkdocsConfig.nav = nav;
 	fs.writeFileSync("mkdocs.yml", yaml.dump(mkdocsConfig));
 });
+
+execSync("mkdocs build");

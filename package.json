@@ -12,6 +12,7 @@
   "author": "comp500",
   "license": "ISC",
   "dependencies": {
-    "js-yaml": "^4.1.0"
+    "js-yaml": "^4.1.0",
+    "kleur": "^4.1.4"
   }
 }

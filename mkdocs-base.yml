@@ -1,15 +1,17 @@
 site_name: packwiz
+repo_name: comp500/packwiz
+repo_url: https://github.com/comp500/packwiz
 theme:
   name: material
   palette:
-    - media: '(prefers-color-scheme: light)'
+    - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: purple
       accent: deep orange
       toggle:
         icon: material/lightbulb
         name: Switch to dark mode
-    - media: '(prefers-color-scheme: dark)'
+    - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: purple
       accent: deep orange
@@ -21,7 +23,10 @@ theme:
     - toc.integrate
 markdown_extensions:
   - pymdownx.magiclink
+plugins:
+  - search
 nav:
+  - Home: index.md
   - Installation: installation.md
   - Tutorials:
       - Getting started: tutorials/getting-started.md
@@ -43,3 +48,9 @@ nav:
       #     - pack.toml: reference/pack-format/pack-toml.md
       #     - index.toml: []
       #     - .packwizignore: []
+extra:
+  social:
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/DcSkRF4
+    - icon: fontawesome/brands/github
+      link: https://github.com/comp500/packwiz

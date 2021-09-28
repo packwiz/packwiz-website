@@ -3,8 +3,9 @@ const fs = require("fs");
 const { execSync } = require("child_process");
 
 execSync("go install github.com/comp500/packwiz@latest");
-execSync("export PATH=$GOPATH/bin:$PATH")
-execSync("packwiz utils markdown --dir=docs/reference/commands");
+execSync("packwiz utils markdown --dir=docs/reference/commands", {
+	env: {...process.env, PATH: `${process.env.GOPATH}/bin:${process.env.PATH}`}
+});
 
 let mkdocsConfig = yaml.load(fs.readFileSync("mkdocs-base.yml", "utf8"));
 Promise.all(mkdocsConfig.nav.map(async el => {

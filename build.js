@@ -50,7 +50,7 @@ Promise.all(
   const schemas = ["pack", "index", "mod"];
   for (let schema of schemas) {
     execSync(
-      `npx --package=wetzel -c 'wetzel -n ../packwiz-spec/schemas/${schema}.json > docs/reference/pack-format/${schema}-toml.md'`
+      `npm x -n wetzel ./packwiz-spec/schemas/${schema}.json > docs/reference/pack-format/${schema}-toml.md -n`
     );
   }
 

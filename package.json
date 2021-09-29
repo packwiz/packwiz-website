@@ -8,7 +8,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node build.js",
-    "start": "npx nodemon -w build.js -w mkdocs-base.yml -w docs -x 'npm run build && serve site'",
+    "start": "npx nodemon -e yml,md,json,js -w build.js,mkdocs.yml,docs,packwiz-spec -x 'npm run build && serve site'",
     "format": "prettier -w ."
   },
   "author": "comp500",

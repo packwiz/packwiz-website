@@ -1,6 +1,7 @@
 site_name: packwiz
 repo_name: comp500/packwiz
 repo_url: https://github.com/comp500/packwiz
+edit_uri: https://github.com/packwiz/packwiz-website/tree/main/docs
 theme:
   name: material
   palette:

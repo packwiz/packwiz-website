@@ -46,6 +46,14 @@ Promise.all(
   mkdocsConfig.nav = nav;
   fs.writeFileSync("mkdocs.yml", yaml.dump(mkdocsConfig));
 
+  console.log(green("Adding the pack-format pages from packwiz-spec"));
+  const schemas = ["pack", "index", "mod"];
+  for (let schema of schemas) {
+    execSync(
+      `npx exec -c 'wetzel -n ../packwiz-spec/schemas/${schema}.json > docs/reference/pack-format/${schema}-toml.md'`
+    );
+  }
+
   console.log(green("Building docs!"));
   execSync("mkdocs build");
   console.log(green("Successfully built docs!"));

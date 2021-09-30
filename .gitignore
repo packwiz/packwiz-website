@@ -133,4 +133,5 @@ docs/reference/commands/*
 !docs/reference/commands/overview.md
 docs/reference/pack-format/*
 !docs/reference/pack-format/overview.md
+!docs/reference/pack-format/packwizignore.md
 site/

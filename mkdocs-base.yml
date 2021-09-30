@@ -43,9 +43,9 @@ nav:
       #     - Installing with packwiz-installer: []
       - Usage with Git: tutorials/git.md
   - Reference:
+      - Overview: reference/overview.md
       - Commands: [] # Commands added here by build.js
       - Pack format:
-          - Overview: reference/pack-format/overview.md
           - pack.toml: reference/pack-format/pack-toml.md
           - index.toml: reference/pack-format/index-toml.md
           - mod.toml: reference/pack-format/mod-toml.md

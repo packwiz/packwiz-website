@@ -7,12 +7,18 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node build.js"
+    "build": "node build.js",
+    "start": "npx nodemon -e yml,md,json,js -w build.js,mkdocs.yml,docs,packwiz-spec -x 'npm run build && serve site'",
+    "format": "prettier -w ."
   },
   "author": "comp500",
   "license": "ISC",
   "dependencies": {
     "js-yaml": "^4.1.0",
-    "kleur": "^4.1.4"
+    "kleur": "^4.1.4",
+    "wetzel": "^0.2.2"
+  },
+  "devDependencies": {
+    "prettier": "^2.4.1"
   }
 }

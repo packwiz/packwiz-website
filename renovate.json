@@ -1,5 +1,21 @@
 {
-  "extends": [
-    "config:base"
-  ]
+	"extends": [
+		"config:base"
+	],
+	"git-submodules": {
+		"enabled": true
+	},
+	"js": {
+		"enabled": false
+	},
+	"pin": {
+		"enabled": false
+	},
+	"packageRules": [
+		{
+			"matchPackagePatterns": ["packwiz-spec"],
+			"automerge": true,
+			"automergeType": "branch"
+		}
+	]
 }

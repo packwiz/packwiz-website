@@ -1,10 +1,12 @@
 name: Run build CI
 
-on: [push, pull_request] 
+on: [push, pull_request]
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      GO111MODULE: on
 
     steps:
       - uses: actions/checkout@v2

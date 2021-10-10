@@ -1,3 +1,3 @@
 [submodule "packwiz-spec"]
 	path = packwiz-spec
-	url = https://github.com/comp500/packwiz-spec
+	url = https://github.com/packwiz/packwiz-spec

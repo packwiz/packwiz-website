@@ -6,4 +6,4 @@ See [Getting started](../../tutorials/getting-started.md) for some useful comman
 
 ## [Pack Format](../pack-format/pack-toml)
 
-You can view the source for the pack format schemas at [comp500/packwiz-spec/](https://github.com/comp500/packwiz-spec/)
+You can view the source for the pack format schemas at [packwiz/packwiz-spec/](https://github.com/packwiz/packwiz-spec/)

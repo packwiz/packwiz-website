@@ -12,6 +12,10 @@
 -   Run `packwiz curseforge detect` to detect files that are available on CurseForge and make them downloaded from there
 -   Use the `--help` flag for more information about any command
 
+## Using a modpack
+
+See the [packwiz-installer] tutorial documentation for instructions on both client and server use.
+
 ### Resources
 
 -   See https://suspicious-joliot-f51f5c.netlify.app/index.html for some documentation

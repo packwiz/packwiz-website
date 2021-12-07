@@ -45,4 +45,4 @@ See the [packwiz-installer] tutorial documentation for instructions on both clie
         -   `packwiz refresh --build` can be used in this mode to generate internal hashes for distributing the pack with [packwiz-installer]
 
 
-[packwiz-installer]: packwiz-installer.md
+[packwiz-installer]: ../installing/packwiz-installer.md

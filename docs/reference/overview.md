@@ -2,7 +2,7 @@
 
 ## [Commands](../commands/packwiz)
 
-See [Getting started](../../tutorials/getting-started.md) for some useful commands to get started
+See [Getting started](../../tutorials/creating/getting-started.md) for some useful commands to get started
 
 ## [Pack Format](../pack-format/pack-toml)
 

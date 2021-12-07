@@ -21,6 +21,8 @@ jobs:
           go-version: "^1.17.1"
       - name: Setup Python
         uses: actions/setup-python@v2.2.2
+        with:
+          python-version: "3.8"
       - run: pip install -r requirements.txt
       - run: npm ci
       - run: npm run build

@@ -41,6 +41,8 @@ You can use [packwiz-installer] to download non-client mods (side either `both` 
 - `-g` flag to disable the GUI
 - `-s server` to download only server-side mods.
 
+itzg's [docker-minecraft-server](https://github.com/itzg/docker-minecraft-server) has built in support for packwiz. You can pass the `PACKWIZ_URL` environment variable pointing to your pack's TOML file, and the container will bootstrap packwiz-installer and install/update the provided pack. See [the documentation](https://github.com/itzg/docker-minecraft-server#running-a-server-with-a-packwiz-modpack) for more information.
+
 ### Resources
 
 -   See https://suspicious-joliot-f51f5c.netlify.app/index.html for some documentation

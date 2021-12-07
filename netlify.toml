@@ -4,3 +4,6 @@
 [[redirects]]
   from = "/tutorials/getting-started/"
   to = "/tutorials/creating/getting-started/"
+[[redirects]]
+  from = "/tutorials/git/"
+  to = "/tutorials/creating/git/"

@@ -38,8 +38,8 @@ nav:
       # - Testing a modpack: []
       - Installing/distributing a modpack:
           - Installing with packwiz-installer: tutorials/installing/packwiz-installer.md
+          - Publishing to CurseForge: tutorials/hosting/curseforge.md
       # TODO: See below; documentation on how to distribute packwiz packs on several platforms
-      #     - Publishing to CurseForge: tutorials/hosting/curseforge.md
       #     - Hosting with HTTP:
       #         - Your own HTTP server: []
       #         - Github Pages: []

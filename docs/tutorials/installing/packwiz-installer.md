@@ -9,7 +9,7 @@ To distribute a packwiz modpack, you'll first want to set up a web hosting servi
 To distribute the modpack as a MultiMC instance:
 
 1. Create a barebones MultiMC instance, with the modloader and Minecraft version you want (memory allocation overrides are also a good idea)
-2. Download packwiz-installer-bootstrap from https://github.com/comp500/packwiz-installer-bootstrap/releases and place it in the instance Minecraft folder
+2. Download packwiz-installer-bootstrap from https://github.com/packwiz/packwiz-installer-bootstrap/releases and place it in the instance Minecraft folder
     > This is the same folder as options.txt - MultiMC will call it `.minecraft` or `minecraft` depending on your system
 3. Go to Edit Instance -> Settings -> Custom commands, then check the Custom Commands box and paste the following command into the pre-launch command field:
     - `"$INST_JAVA" -jar packwiz-installer-bootstrap.jar https://[your-server]/pack.toml`
@@ -29,4 +29,4 @@ You can use [packwiz-installer] to download non-client mods (side either `both` 
 
 itzg's [docker-minecraft-server](https://github.com/itzg/docker-minecraft-server) has built in support for packwiz. You can pass the `PACKWIZ_URL` environment variable pointing to your pack's TOML file, and the container will bootstrap packwiz-installer and install/update the provided pack. See [the documentation](https://github.com/itzg/docker-minecraft-server#running-a-server-with-a-packwiz-modpack) for more information.
 
-[packwiz-installer]: https://github.com/comp500/packwiz-installer
+[packwiz-installer]: https://github.com/packwiz/packwiz-installer

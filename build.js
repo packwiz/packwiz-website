@@ -4,7 +4,7 @@ const { execSync } = require("child_process");
 const { green } = require("kleur/colors");
 
 console.log(green("Installing packwiz..."));
-execSync("go install github.com/comp500/packwiz@latest");
+execSync("go install github.com/packwiz/packwiz@latest");
 
 console.log(green("Outputting packwiz cli docs..."));
 execSync("packwiz utils markdown --dir=docs/reference/commands", {

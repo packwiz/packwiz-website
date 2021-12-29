@@ -1,47 +1,33 @@
 # Getting started
 
-- Run `packwiz init` to create a modpack in the current folder
-- Run `packwiz curseforge import [zip path]` to import from a CurseForge modpack
-- Run `packwiz refresh` to update the index of mods
-- Run `packwiz curseforge install [mod]` to install a mod from CurseForge
-- Run `packwiz modrinth install [mod]` to install a mod from Modrinth
-- Run `packwiz update [mod]` to update a mod
-- Run `packwiz update --all` to update all the mods in the modpack
-- Run `packwiz curseforge export` to export the modpack in the format supported by the CurseForge Launcher
-- Run `packwiz serve` to start a local HTTP server running the pack - which [packwiz-installer] can install from
-- Run `packwiz curseforge detect` to detect files that are available on CurseForge and make them downloaded from there
-- Use the `--help` flag for more information about any command
+## Creating a new modpack
+To create a new modpack, just run `packwiz init` - this is all you need to start using packwiz! It'll ask you for a few details, then create a `pack.toml` and `index.toml` based on your answers.
 
-## Using a modpack
+`pack.toml` is the main file of your modpack and defines several crucial details; including the name of your modpack, the version of Minecraft and the version of the mod loader you're using. Optionally, you can include a version (required for exporting to Modrinth packs) and a description for your modpack.
 
-See the [packwiz-installer] tutorial documentation for instructions on both client and server use.
+`index.toml` is the index of your modpack which lists the files in your modpack with their hashes (for integrity checking). You're unlikely to need to touch this yourself, but you'll need to run the `packwiz refresh` command when you manually add, remove or edit files in the pack.
 
-### Resources
+## Importing an existing modpack
+Have an existing CurseForge modpack? You can use the `packwiz curseforge import` command with the path to the modpack `.zip` file, which will import all the mods and files from the pack into your current directory. If this isn't your own modpack, please make sure you have permission (or a license) to redistribute the modpack you import!
 
-- See https://suspicious-joliot-f51f5c.netlify.app/index.html for some documentation
-	- I am in the process of rewriting the format, so there may be information there that is outdated
-- See https://github.com/Fibercraft/Temporary-Modpack for an example of an existing modpack using packwiz
-	- This repository can be published to a service like Github Pages or Netlify and installed using [packwiz-installer]
-	- This repository also shows the use of `.gitattributes` and `.packwizignore` to disable line ending modification (so that the hashes are correct) and ignore git-specific files
-- https://modfest.net/fallfest/1.16/server/ is also a good example of a MultiMC instance that uses [packwiz-installer]
+!!! warning
 
-### Tips
+	If you have existing files in your modpack, importing will overwrite them. It's a good idea to use version control systems (such as Git) with packwiz!
 
-- There are some useful aliases, like `packwiz cf` => `packwiz curseforge` and `packwiz mr` => `packwiz modrinth`
-- The `packwiz cf install` command supports multiple formats:
-	- `packwiz cf install sodium` (by slug)
-	- `packwiz cf install https://www.curseforge.com/minecraft/mc-mods/sodium` (by mod page URL)
-	- `packwiz cf install https://www.curseforge.com/minecraft/mc-mods/sodium/files/3067101` (by file page URL)
-	- `packwiz cf install Sodium` (by search)
-	- `packwiz cf install --addon-id 394468 --file-id 3067101` (if all else fails)
-- If files aren't being found, try running the `packwiz refresh` command to update the index!
+## Cheat Sheet
+You'll get more information in the tutorials following this one (and the reference pages), but this is a quick summary of the most useful commands:
 
-## Options
-
-- Additional options can be configured in the `[options]` section of `pack.toml`, as follows:
-	- `mods-folder` The folder to save mod metadata files into, for the install commands
-	- `acceptable-game-versions` A list of additional Minecraft versions to accept when installing or updating mods
-	- `no-internal-hashes` If this is set to true, packwiz will not generate hashes of local files, to prevent merge conflicts and inconsistent hashes when using git/etc.
-		- `packwiz refresh --build` can be used in this mode to generate internal hashes for distributing the pack with [packwiz-installer]
+- `packwiz init` creates a modpack in the current folder
+- `packwiz curseforge import [zip path]` imports a CurseForge modpack
+- `packwiz refresh` updates the modpack index
+- `packwiz curseforge install [mod]` installs a mod from CurseForge
+- `packwiz modrinth install [mod]` installs a mod from Modrinth
+- `packwiz update [mod]` updates a mod
+- `packwiz update --all` updates all the mods in the modpack
+- `packwiz curseforge export` exports the modpack in the format supported by the CurseForge Launcher
+- `packwiz modrinth export` exports the modpack in the format supported by Modrinth (and their in-progress launcher)
+- `packwiz serve` to start a local HTTP server running the pack - which [packwiz-installer] can install from
+- `packwiz curseforge detect` to detect files that are available on CurseForge and make them downloaded from there
+- Use the `--help` flag for more information about any command!
 
 [packwiz-installer]: ../installing/packwiz-installer.md

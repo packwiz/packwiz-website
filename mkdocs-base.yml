@@ -24,6 +24,9 @@ theme:
     - navigation.sections
 markdown_extensions:
   - pymdownx.magiclink
+  - admonition
+  - pymdownx.highlight
+  - pymdownx.superfences
 plugins:
   - search
 nav:
@@ -32,8 +35,9 @@ nav:
   - Tutorials:
       - Creating a modpack:
           - Getting started: tutorials/creating/getting-started.md
-          - Usage with Git: tutorials/creating/git.md
-          # TODO: longer-form tutorials for different commands
+          - Adding mods: tutorials/creating/adding-mods.md
+          - Using packwiz with Git: tutorials/creating/git.md
+          # TODO: document optional and sided mods!
       # TODO: Documentation on how to test (packwiz serve) packwiz packs - might link to the below pages for info about installing
       # - Testing a modpack: []
       - Installing/distributing a modpack:
@@ -45,7 +49,7 @@ nav:
       #         - Github Pages: []
       #         - Netlify: []
   - Reference:
-      - Overview: reference/overview.md
+      - Additional options: reference/additional-options.md
       - Commands: [] # Commands added here by build.js
       - Pack format:
           - pack.toml: reference/pack-format/pack-toml.md

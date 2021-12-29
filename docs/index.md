@@ -1,11 +1,11 @@
 # packwiz
 
-packwiz is a command line tool for creating Minecraft modpacks. Instead of managing JAR files directly, packwiz creates TOML metadata files which can be easily version-controlled and shared with git (see an example pack [here](https://github.com/packwiz/packwiz-example-pack)). You can then [export it to a CurseForge modpack](tutorials/hosting/curseforge.md), or [use packwiz-installer](tutorials/installing/packwiz-installer.md) for an auto-updating MultiMC instance.
+packwiz is a command line tool for creating Minecraft modpacks. Instead of managing JAR files directly, packwiz creates TOML metadata files which can be easily version-controlled and shared with git (see an example pack [here](https://github.com/packwiz/packwiz-example-pack)). You can then [export it to a CurseForge or Modrinth modpack](tutorials/hosting/curseforge.md), or [use packwiz-installer](tutorials/installing/packwiz-installer.md) for an auto-updating MultiMC instance.
 
 packwiz is great for...
 
 - Distributing private modpacks for servers
-- Creating modpacks for CurseForge (and soon Modrinth)
+- Creating modpacks for CurseForge and Modrinth
 
 packwiz is not so great for...
 
@@ -20,6 +20,7 @@ Join my Discord server if you need help [here](https://discord.gg/Csh8zbbhCt)!
 - MultiMC pack installer/updater, with support for optional mods and fast automatic updates - perfect for servers!
 - Pack distribution with HTTP servers, with a built in local server for testing
 - Easy installation and updating of multiple mods at once from CurseForge and Modrinth
-- Exporting and importing to/from CurseForge packs
+- Exporting to CurseForge and Modrinth packs
+- Importing from CurseForge packs
 - Server-only and Client-only mod handling
 - Creation of remote file metadata from JAR files for CurseForge mods

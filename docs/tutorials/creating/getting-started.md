@@ -26,7 +26,6 @@ You'll get more information in the tutorials following this one (and the referen
 - `packwiz update --all` updates all the mods in the modpack
 - `packwiz curseforge export` exports the modpack in the format supported by the CurseForge Launcher
 - `packwiz modrinth export` exports the modpack in the format supported by Modrinth (and their in-progress launcher)
-- `packwiz serve` to start a local HTTP server running the pack - which [packwiz-installer] can install from
 - `packwiz curseforge detect` to detect files that are available on CurseForge and make them downloaded from there
 - Use the `--help` flag for more information about any command!
 

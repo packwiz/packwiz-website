@@ -2,7 +2,7 @@
 
 [packwiz-installer] is a Java-based installer that allows for automatic installation and updates of packwiz packs! It can be used with MultiMC as a prelaunch task, or on servers as part of your start script, and supports side-only mods as well as optional mods with a fancy GUI.
 
-To distribute a packwiz modpack, you'll first want to set up a web hosting service (such as Netlify, Github Pages, GitLab Pages) so that your pack files are accessible from a HTTP/HTTPS link.
+To distribute a packwiz modpack, you'll first want to set up a web hosting service (such as Netlify, Github Pages, GitLab Pages) so that your pack files are accessible from a HTTP/HTTPS link. For testing, you can use the `packwiz serve` command to run a local HTTP server, that serves your pack at `http://localhost:8080/pack.toml` - it'll refresh the index whenever it's queried so you don't need to refresh it manually!
 
 ## Creating a MultiMC instance for your modpack
 

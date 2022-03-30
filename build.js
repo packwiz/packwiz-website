@@ -47,7 +47,7 @@ Promise.all(
 	fs.writeFileSync("mkdocs.yml", yaml.dump(mkdocsConfig));
 
 	console.log(green("Installing json-schema-docs..."));
-	execSync("go install github.com/grafana/json-schema-docs@latest");
+	execSync("go install github.com/marcusolsson/json-schema-docs@latest");
 
 	console.log(green("Adding the pack-format pages from packwiz-spec"));
 	const schemas = ["pack", "index", "mod"];

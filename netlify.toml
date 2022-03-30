@@ -1,6 +1,7 @@
 [build]
   command = "npm run build"
   publish = "site/"
+  environment = { GO_VERSION = "1.18" }
 [[redirects]]
   from = "/tutorials/getting-started/"
   to = "/tutorials/creating/getting-started/"

@@ -5,6 +5,7 @@ To add mods to your modpack, you'll need `.toml` metadata files to define how to
 Mods from CurseForge and Modrinth can be easily added with the `modrinth install` and `curseforge install` commands. They can also be updated with the `packwiz update` command; pass `--all` to update all your mods at once. Mods can be passed in multiple forms to these commands:
 
 - `packwiz curseforge install indium` (by slug)
+- `packwiz curseforge install --category texture-packs unity` (by slug; category and game can be specified with the corresponding flags)
 - `packwiz curseforge install https://www.curseforge.com/minecraft/mc-mods/indium` (by mod page URL)
 - `packwiz curseforge install https://www.curseforge.com/minecraft/mc-mods/indium/files/3535202` (by file page URL)
 - `packwiz curseforge install Indium` (by search)

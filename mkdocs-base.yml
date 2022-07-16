@@ -54,7 +54,7 @@ nav:
       - Pack format:
           - pack.toml: reference/pack-format/pack-toml.md
           - index.toml: reference/pack-format/index-toml.md
-          - mod.toml: reference/pack-format/mod-toml.md
+          - mod.pw.toml: reference/pack-format/mod-toml.md
       #     - .packwizignore: []
 extra:
   social:

@@ -1,7 +1,8 @@
 # Getting started
+To use the packwiz CLI, first you'll want to create a folder to develop your modpack in. This should not be the same as your `.minecraft` or a MultiMC instance folder; this folder holds metadata and files for your modpack so it can be managed by packwiz. Then open your command line (Command Prompt/Terminal) and use the `cd` command to move into the folder you created.
 
 ## Creating a new modpack
-To create a new modpack, just run `packwiz init` - this is all you need to start using packwiz! It'll ask you for a few details, then create a `pack.toml` and `index.toml` based on your answers.
+To create the files for your new modpack, just run `packwiz init` in the folder you created! It'll ask you for a few details, then create a `pack.toml` and `index.toml` based on your answers.
 
 `pack.toml` is the main file of your modpack and defines several crucial details; including the name of your modpack, the version of Minecraft and the version of the mod loader you're using. Optionally, you can include a version (required for exporting to Modrinth packs) and a description for your modpack.
 

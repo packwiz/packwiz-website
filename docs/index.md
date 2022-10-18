@@ -17,7 +17,7 @@ Join my Discord server if you need help [here](https://discord.gg/Csh8zbbhCt)!
 ## Features
 
 - Git-friendly TOML-based metadata format
-- Java-based pack installer/updater (works with MultiMC, PolyMC, and ATLauncher), with support for optional mods and fast automatic updates - perfect for servers!
+- Java-based pack installer/updater (works with MultiMC and ATLauncher), with support for optional mods and fast automatic updates - perfect for servers!
 - Pack distribution with HTTP servers, with a built in local server for testing
 - Easy installation and updating of multiple mods at once from CurseForge and Modrinth
 - Exporting to CurseForge and Modrinth packs

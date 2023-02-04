@@ -22,6 +22,7 @@ theme:
   features:
     - navigation.tabs
     - navigation.sections
+    - navigation.indexes
 markdown_extensions:
   - pymdownx.magiclink
   - admonition

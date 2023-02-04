@@ -8,4 +8,4 @@ Be wary of including files that you don't want (the `packwiz` executable, and th
 
 The CurseForge pack format doesn't really support optional mods. The user won't be prompted about optional mods, but if they default to being disabled they will be disabled in the CurseForge launcher. (though I can't speak for third-party support since I don't think the launcher usually exports disabled mods)
 
-See [the corresponding reference page](../../reference/commands/packwiz_curseforge_export.md) for less information. <!-- TODO: add documentation to CLI itself!! -->
+See [the corresponding reference page](../../reference/commands/packwiz/curseforge/export/index.md) for less information. <!-- TODO: add documentation to CLI itself!! -->

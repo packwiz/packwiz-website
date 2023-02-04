@@ -8,7 +8,7 @@ console.log(green("Installing packwiz..."));
 execSync("go install github.com/packwiz/packwiz@latest");
 
 console.log(green("Cleaning old packwiz cli docs..."));
-fs.rmSync("./docs/reference/commands", { recursive: true });
+fs.rmSync("./docs/reference/commands", { recursive: true, force: true });
 
 console.log(green("Outputting packwiz cli docs..."));
 execSync("packwiz utils markdown --dir=docs/reference/commands", {

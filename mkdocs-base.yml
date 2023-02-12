@@ -30,6 +30,10 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
   - def_list
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
 plugins:
   - search
 nav:
@@ -55,6 +59,7 @@ nav:
       - Additional options: reference/additional-options.md
       - Commands: [] # Commands added here by build.js
       - Pack format:
+          - reference/pack-format/index.md
           - pack.toml: reference/pack-format/pack-toml.md
           - index.toml: reference/pack-format/index-toml.md
           - mod.pw.toml: reference/pack-format/mod-toml.md

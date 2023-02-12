@@ -3,7 +3,12 @@ const fs = require("fs");
 const { execSync } = require("child_process");
 const { green } = require("kleur/colors");
 const path = require("path");
+const genCSS = require("./gencss");
 
+console.log(green("Generating CSS for JSON schema docs"));
+genCSS();
+
+// TODO: install packwiz in actions script instead?
 console.log(green("Installing packwiz..."));
 execSync("go install github.com/packwiz/packwiz@latest");
 
@@ -34,7 +39,7 @@ Promise.all(
 						for (const file of files) {
 							// Move to path with subfolders
 							let fileRenamed = file.slice(0, -3).replace(/_/g, "/") + "/index.md";
-							await fs.promises.mkdir(path.dirname(base + fileRenamed), {recursive: true});
+							await fs.promises.mkdir(path.dirname(base + fileRenamed), { recursive: true });
 							await fs.promises.rename(base + file, base + fileRenamed);
 
 							let fileContents = await fs.promises.readFile(base + fileRenamed, { encoding: "utf8" });
@@ -69,7 +74,7 @@ title: "${headingText}"
 						}
 
 						/* Wrangle nav hierarchy into the format mkdocs likes
-						*/
+						 */
 
 						// Flatten top level
 						let commandsFlattened = {};
@@ -109,6 +114,7 @@ title: "${headingText}"
 	mkdocsConfig.nav = nav;
 	fs.writeFileSync("mkdocs.yml", yaml.dump(mkdocsConfig));
 
+	// TODO: move to new doc generator
 	console.log(green("Installing json-schema-docs..."));
 	execSync("go install github.com/marcusolsson/json-schema-docs@latest");
 
@@ -125,8 +131,11 @@ title: "${headingText}"
 			}
 		);
 	}
+	console.log(green("Copying schemas to metadata folder..."));
+	// TODO: copy schemas to meta folder?
+	console.log(green("Schemas copied!"));
 
-	console.log(green("Building docs!"));
+	console.log(green("Building docs..."));
 	execSync("mkdocs build");
 	console.log(green("Successfully built docs!"));
 });

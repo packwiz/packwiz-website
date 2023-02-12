@@ -27,7 +27,9 @@ markdown_extensions:
   - pymdownx.magiclink
   - admonition
   - pymdownx.highlight
+  - pymdownx.details
   - pymdownx.superfences
+  - def_list
 plugins:
   - search
 nav:
@@ -63,3 +65,5 @@ extra:
       link: https://discord.gg/DcSkRF4
     - icon: fontawesome/brands/github
       link: https://github.com/packwiz/packwiz
+extra_css:
+  - styles/generated/json-doc.css

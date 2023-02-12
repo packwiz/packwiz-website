@@ -2,6 +2,7 @@ site
 node_modules
 mkdocs.yml
 packwiz-spec
+package-lock.json
 
 # Generated docs
 # docs/reference/commands/*
@@ -9,6 +10,9 @@ packwiz-spec
 # docs/reference/pack-format/*
 # !docs/reference/pack-format/overview.md
 # !docs/reference/pack-format/packwizignore.md
+
+# Generated styles
+docs/styles/generated/
 
 # Prettier pls (https://github.com/prettier/prettier/issues/5019)
 *.md

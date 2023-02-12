@@ -133,7 +133,7 @@ site/
 
 # Generated docs
 docs/reference/commands/*
-!docs/reference/commands/overview.md
 docs/reference/pack-format/*
-!docs/reference/pack-format/overview.md
+!docs/reference/pack-format/index.md
 !docs/reference/pack-format/packwizignore.md
+docs/styles/generated/

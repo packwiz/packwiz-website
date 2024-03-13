@@ -44,6 +44,7 @@ nav:
       - Installing/distributing a modpack:
           - Installing with packwiz-installer: tutorials/installing/packwiz-installer.md
           - Publishing to CurseForge: tutorials/hosting/curseforge.md
+          - Publishing to Modrinth: tutorials/hosting/modrinth.md
       # TODO: See below; documentation on how to distribute packwiz packs on several platforms
       #     - Hosting with HTTP:
       #         - Your own HTTP server: []

@@ -1,15 +1,7 @@
 {
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
 	"extends": ["config:base"],
-	"git-submodules": {
-		"enabled": true
-	},
-	"js": {
-		"enabled": false
-	},
-	"pin": {
-		"enabled": false
-	},
+	"enabledManagers": ["git-submodules"],
 	"packageRules": [
 		{
 			"matchPackagePatterns": ["packwiz-spec"],
